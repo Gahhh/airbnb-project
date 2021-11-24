@@ -1,0 +1,40 @@
+{
+    "parser": "babel-eslint",
+    "root": true,
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+
+        "eslint:recommended",
+        "plugin:react/recommended"
+//        "standard"
+    ],
+
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true,
+            "experimentalObjectRestSpread": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module",
+//        "requireConfigFile" : false
+        "parser": "@babel/eslint-parser"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "linebreak-style": 0,
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "semi": 0,
+        "comma-dangle": 0,
+        "no-unused-vars":"off"
+
+
+    }
+
+}
